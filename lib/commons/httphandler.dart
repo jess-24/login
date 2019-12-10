@@ -28,7 +28,7 @@ class HttpHandler{//clase todas las peticiones http
   }
   Future<List<Productos>> getAllProductos() async {
     ListaProductos listaProductos;
-    http.Response  response = await http.get( 'http://192.168.43.64:3000/api/wspeliculas/$token');
+    http.Response  response = await http.get( 'http://18.212.34.4:8000/api/productos/$token');
 
     try{
       if(response.statusCode == 200){
